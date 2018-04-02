@@ -1,0 +1,73 @@
+baseurl = "https://example.org/"
+languageCode = "en-gb"
+title = "Hugo Documentation"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	author = "Sergiu Bodiu"
+	description = "Hugo Documentation"
+	copyright = "Sergiu Bodiu. Released under the MIT license"
+
+	# Repository
+	provider = "GitHub"
+
+	version = "1.0.0"
+	logo = "/images/logo.svg"
+	favicon = "favicon.ico"
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "indigo"
+    	accent  = "light-blue"
+
+    [params.font]
+    	text = "Roboto"
+    	code = "Roboto Mono"
+
+[social]
+	twitter = "sergiu_bodiu"
+	github  = "sergiubodiu"
+
+
+[[menu.main]]
+	name   = "Platform Documentation"
+	url    = "/"
+	weight = 1
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Adding content"
+	url    = "adding-content/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Roadmap"
+	url    = "roadmap/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Infrastructure Troubleshooting"
+	url    = "infra-flight-rules/"
+	weight = 40
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
